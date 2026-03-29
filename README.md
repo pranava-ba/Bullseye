@@ -1,0 +1,2 @@
+# Bullseye
+NSE trade analysis 
