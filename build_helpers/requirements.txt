@@ -1,0 +1,24 @@
+# Bullseye Fintech — NSE EOD Dashboard
+# requirements.txt
+# Generated for Python 3.11+
+# Install with: pip install -r requirements.txt
+
+# ── Web framework ─────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Data processing ───────────────────────────────────────────────────────────
+pandas>=2.2.0
+numpy>=1.26.0
+polars>=0.20.0
+
+# ── Charting ──────────────────────────────────────────────────────────────────
+plotly>=5.22.0
+
+# ── NSE downloads & HTTP ──────────────────────────────────────────────────────
+requests>=2.32.0
+
+# ── Trading calendar ──────────────────────────────────────────────────────────
+pandas-market-calendars>=4.3.1
+
+# ── PyInstaller (only needed when building the EXE — not a runtime dep) ───────
+# pyinstaller>=6.6.0
