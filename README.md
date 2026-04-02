@@ -39,7 +39,7 @@ You can pull any year of NSE equity data back to 2000, browse OHLCV price histor
 
 ## Screenshots
 
-> *Dark-terminal aesthetic · IBM Plex typography · GitHub-dark colour palette*
+> *Light-terminal aesthetic · IBM Plex typography · Custom pastel colour palette*
 
 | OHLCV Chart View | Pivot Point Matrix |
 |---|---|
@@ -99,7 +99,7 @@ Four methodologies computed daily for every symbol:
 - Filtered exports via `get_filtered_eod_bytes()` and `get_filtered_pivot_bytes()` (programmatic API)
 
 ### 🔁 Auto-Update
-- Optional toggle (off by default) — fetches previous trading day's data on launch
+- Optional toggle (now changed to radio button) (off by default) — fetches previous trading day's data on launch
 - **Holiday-aware**: consults the NSE trading calendar (`CUE_DATE_<year>.csv`) before deciding whether an update is needed — won't trigger on NSE holidays
 - Uses incremental mode so only genuinely missing dates are fetched
 
