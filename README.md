@@ -288,6 +288,8 @@ See [LICENSE](LICENSE) for full terms.
 
 ---
 
+https://bullseye.readthedocs.io/en/latest/
+
 <div align="center">
 
 *Built with 📈 for serious NSE traders and quant researchers.*
