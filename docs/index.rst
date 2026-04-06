@@ -2,9 +2,10 @@ Welcome to Bullseye Documentation
 ================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Getting Started
 
+   pre_build
    installation
    quickstart
    configuration
