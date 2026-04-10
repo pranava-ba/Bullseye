@@ -314,3 +314,29 @@ dl dd {
   .wy-nav-content { padding: 1rem; }
   h1 { font-size: 1.5rem; }
 }
+
+/* ── Sidebar: Expanded Subsections (default state) ── */
+.wy-menu-vertical li.toctree-l2 > a,
+.wy-menu-vertical li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l4 > a {
+  background: var(--navy-mid) !important;
+  color: var(--silver-light) !important;
+  border-left: 2px solid var(--border);
+  padding-left: 24px;
+}
+
+.wy-menu-vertical li.toctree-l3 > a { padding-left: 36px; }
+.wy-menu-vertical li.toctree-l4 > a { padding-left: 48px; }
+
+/* Active/current subsection */
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l3.current > a {
+  background: var(--navy-light) !important;
+  color: var(--amber) !important;
+  border-left: 3px solid var(--amber);
+}
+
+/* The ul container wrapping expanded children */
+.wy-menu-vertical li.current ul {
+  background: var(--navy-mid) !important;
+}
