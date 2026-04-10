@@ -1,0 +1,316 @@
+/* ============================================================
+   Bullseye Fintech Docs — Custom Theme
+   Palette: Dark Navy / Silver / Amber-Orange
+   ============================================================ */
+
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+/* ── Root Palette ── */
+:root {
+  --navy-darkest:  #0a0e1a;
+  --navy-dark:     #0f1629;
+  --navy-mid:      #1a2444;
+  --navy-light:    #243060;
+  --silver-dark:   #8a9ab8;
+  --silver-mid:    #b0bccc;
+  --silver-light:  #d4dce8;
+  --silver-pale:   #edf0f5;
+  --amber:         #f5a623;
+  --amber-light:   #fbbf45;
+  --amber-pale:    #fff3cd;
+  --white:         #ffffff;
+  --text-primary:  #e8edf5;
+  --text-muted:    #8a9ab8;
+  --border:        #2a3a5c;
+}
+
+/* ── Base ── */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--navy-darkest);
+  color: var(--text-primary);
+}
+
+/* ── Sidebar ── */
+.wy-nav-side {
+  background: var(--navy-dark) !important;
+  border-right: 1px solid var(--border);
+}
+
+.wy-side-nav-search {
+  background: var(--navy-mid) !important;
+  border-bottom: 2px solid var(--amber) !important;
+}
+
+.wy-side-nav-search input[type="text"] {
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 4px;
+}
+
+.wy-side-nav-search .wy-dropdown > a,
+.wy-side-nav-search > a {
+  color: var(--white) !important;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
+}
+
+/* Project name in sidebar */
+.wy-side-nav-search > a:hover {
+  background: transparent;
+  color: var(--amber) !important;
+}
+
+/* ── Sidebar Navigation ── */
+.wy-menu-vertical a {
+  color: var(--silver-mid) !important;
+  font-size: 0.875rem;
+  padding: 6px 16px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.wy-menu-vertical a:hover {
+  background: var(--navy-mid) !important;
+  color: var(--amber-light) !important;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current > a:hover {
+  background: var(--navy-light) !important;
+  color: var(--amber) !important;
+  border-left: 3px solid var(--amber);
+  font-weight: 600;
+}
+
+.wy-menu-vertical li.toctree-l1 > a {
+  font-weight: 600;
+  color: var(--silver-light) !important;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.wy-menu-vertical p.caption {
+  color: var(--amber) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 16px 4px;
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+/* ── Main Content Area ── */
+.wy-nav-content-wrap {
+  background: var(--navy-darkest) !important;
+}
+
+.wy-nav-content {
+  background: var(--navy-darkest) !important;
+  max-width: 960px;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  color: var(--white) !important;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--amber);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.8em;
+  color: var(--white) !important;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: var(--silver-light) !important;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25em;
+  margin-top: 1.8em;
+}
+
+h3 {
+  font-size: 1.15rem;
+  color: var(--amber-light) !important;
+}
+
+h4, h5, h6 {
+  color: var(--silver-mid) !important;
+}
+
+p, li, td, th {
+  color: var(--silver-light);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--amber-light) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--amber) !important;
+  text-decoration: underline;
+}
+
+/* ── Code Blocks ── */
+pre, code, tt {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+code, tt {
+  background: var(--navy-mid) !important;
+  color: var(--amber-light) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 0.88em;
+}
+
+div[class^="highlight"], pre {
+  background: var(--navy-dark) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+  border-left: 3px solid var(--amber) !important;
+}
+
+pre {
+  color: var(--silver-light) !important;
+  padding: 1rem 1.2rem !important;
+}
+
+/* Syntax highlight adjustments */
+.highlight .k, .highlight .kn  { color: #81a1c1 !important; }
+.highlight .s, .highlight .s1, .highlight .s2  { color: #a3be8c !important; }
+.highlight .c, .highlight .c1  { color: #616e88 !important; font-style: italic; }
+.highlight .n  { color: var(--silver-light) !important; }
+.highlight .o  { color: var(--amber-light) !important; }
+.highlight .mi { color: #b48ead !important; }
+.highlight .nf { color: #88c0d0 !important; }
+.highlight .nc { color: var(--amber-light) !important; }
+
+/* ── Tables ── */
+table.docutils {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table.docutils thead tr th {
+  background: var(--navy-mid) !important;
+  color: var(--amber) !important;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--border) !important;
+  padding: 10px 14px;
+}
+
+table.docutils tbody tr td {
+  background: var(--navy-dark) !important;
+  color: var(--silver-light) !important;
+  border: 1px solid var(--border) !important;
+  padding: 9px 14px;
+  vertical-align: top;
+}
+
+table.docutils tbody tr:nth-child(even) td {
+  background: var(--navy-mid) !important;
+}
+
+table.docutils tbody tr:hover td {
+  background: var(--navy-light) !important;
+}
+
+/* ── Admonitions (Note / Tip / Warning / Important) ── */
+.admonition {
+  border-radius: 6px;
+  border-left: 4px solid var(--amber);
+  background: var(--navy-mid) !important;
+  margin: 1.2em 0;
+  padding: 0.8em 1em;
+}
+
+.admonition.note       { border-left-color: var(--silver-mid); }
+.admonition.tip        { border-left-color: #a3be8c; }
+.admonition.warning    { border-left-color: #f08030; }
+.admonition.important  { border-left-color: var(--amber); }
+
+.admonition-title {
+  color: var(--amber) !important;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4em;
+}
+
+.admonition p {
+  color: var(--silver-light) !important;
+}
+
+/* ── Breadcrumbs / Footer ── */
+.rst-footer-buttons a {
+  background: var(--navy-mid);
+  color: var(--amber) !important;
+  border: 1px solid var(--amber);
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+
+.rst-footer-buttons a:hover {
+  background: var(--amber);
+  color: var(--navy-dark) !important;
+}
+
+/* ── Definition Lists ── */
+dl dt {
+  background: var(--navy-mid) !important;
+  border-left: 3px solid var(--amber) !important;
+  color: var(--white) !important;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+}
+
+dl dd {
+  margin-left: 1em;
+  color: var(--silver-light);
+}
+
+/* ── Version / Badge ── */
+.wy-side-nav-search .version {
+  color: var(--amber) !important;
+  font-size: 0.8rem;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--navy-dark); }
+::-webkit-scrollbar-thumb { background: var(--navy-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--amber); }
+
+/* ── Math (LaTeX / MathJax) ── */
+.math {
+  color: var(--amber-light) !important;
+}
+
+/* ── Responsive tweaks ── */
+@media screen and (max-width: 768px) {
+  .wy-nav-content { padding: 1rem; }
+  h1 { font-size: 1.5rem; }
+}
