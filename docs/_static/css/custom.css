@@ -58,7 +58,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Project name in sidebar */
 .wy-side-nav-search > a:hover {
   background: transparent;
   color: var(--amber) !important;
@@ -104,30 +103,57 @@ body {
   margin-top: 8px;
 }
 
-/* ── Sidebar: Expanded Subsections (default state) ── */
-.wy-menu-vertical li.toctree-l2 > a,
-.wy-menu-vertical li.toctree-l3 > a,
-.wy-menu-vertical li.toctree-l4 > a {
+/* ── Sidebar: Expanded Subsections ── */
+
+/* Container background for the entire expanded ul */
+.wy-nav-side .wy-menu-vertical li.current ul,
+.wy-nav-side .wy-menu-vertical li.toctree-l1.current ul {
+  background: var(--navy-mid) !important;
+}
+
+/* l2 default state */
+.wy-nav-side .wy-menu-vertical li.toctree-l2 > a {
   background: var(--navy-mid) !important;
   color: var(--silver-light) !important;
-  border-left: 2px solid var(--border);
-  padding-left: 24px;
+  border-left: 2px solid var(--border) !important;
+  padding-left: 24px !important;
+  font-weight: 400;
 }
 
-.wy-menu-vertical li.toctree-l3 > a { padding-left: 36px; }
-.wy-menu-vertical li.toctree-l4 > a { padding-left: 48px; }
+/* l3 default state */
+.wy-nav-side .wy-menu-vertical li.toctree-l3 > a {
+  background: var(--navy-mid) !important;
+  color: var(--silver-light) !important;
+  border-left: 2px solid var(--border) !important;
+  padding-left: 36px !important;
+  font-weight: 400;
+}
+
+/* l4 default state */
+.wy-nav-side .wy-menu-vertical li.toctree-l4 > a {
+  background: var(--navy-mid) !important;
+  color: var(--silver-light) !important;
+  border-left: 2px solid var(--border) !important;
+  padding-left: 48px !important;
+  font-weight: 400;
+}
+
+/* Hover for all subsection levels */
+.wy-nav-side .wy-menu-vertical li.toctree-l2 > a:hover,
+.wy-nav-side .wy-menu-vertical li.toctree-l3 > a:hover,
+.wy-nav-side .wy-menu-vertical li.toctree-l4 > a:hover {
+  background: var(--navy-light) !important;
+  color: var(--amber-light) !important;
+}
 
 /* Active/current subsection */
-.wy-menu-vertical li.toctree-l2.current > a,
-.wy-menu-vertical li.toctree-l3.current > a {
+.wy-nav-side .wy-menu-vertical li.toctree-l2.current > a,
+.wy-nav-side .wy-menu-vertical li.toctree-l3.current > a,
+.wy-nav-side .wy-menu-vertical li.toctree-l4.current > a {
   background: var(--navy-light) !important;
   color: var(--amber) !important;
-  border-left: 3px solid var(--amber);
-}
-
-/* The ul container wrapping expanded children */
-.wy-menu-vertical li.current ul {
-  background: var(--navy-mid) !important;
+  border-left: 3px solid var(--amber) !important;
+  font-weight: 600;
 }
 
 /* ── Main Content Area ── */
